@@ -54,10 +54,9 @@ def game_start():
 
     random_num = random.randint(1, 10)
     print("This is a number guessing game, each time you play you'll be guessing a random number that i generated (1-10).\nAfter each miss, your points will be deducted, and if you reach zero... i win.")
-    sleep(1) #CHANGE BACK TO 7
+    sleep(7)
     while(points > 0 and again == "yes"):
         os.system('cls')
-        print(random_num)
         guess = int(input("Input your guess: "))
         if(guess != random_num):
             print("Mistake.")
@@ -74,7 +73,6 @@ def game_start():
             num = high_score
             if(points > num):
                 num = points
-                #new
                 high_name = name
             again = input("Do you want to play again? yes/no...\n").lower()
             points = 5
