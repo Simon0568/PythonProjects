@@ -13,7 +13,7 @@ def menu():
     print("Enter your choice:")
     print("1. Play\n2. High Scores\n3. Exit game\n")
     menu_choice = input()
-    while(menu_choice not in ["1", "2", "3"]):
+    while menu_choice not in ["1", "2", "3"]:
         print("Invalid choice, please choose between 1, 2 and 3...")
         menu_choice = input()
     if(menu_choice == "1"):
@@ -55,7 +55,7 @@ def game_start():
     random_num = random.randint(1, 10)
     print("This is a number guessing game, each time you play you'll be guessing a random number that i generated (1-10).\nAfter each miss, your points will be deducted, and if you reach zero... i win.")
     sleep(7)
-    while(points > 0 and again == "yes"):
+    while points > 0 and again == "yes":
         os.system('cls')
         guess = int(input("Input your guess: "))
         if(guess != random_num):
@@ -76,7 +76,7 @@ def game_start():
                 high_name = name
             again = input("Do you want to play again? yes/no...\n").lower()
             points = 5
-            while(again not in ["yes", "no"]):
+            while again not in ["yes", "no"]:
                 again = input("Invalid choice, Do you want to play again? yes/no...\n").lower()
     print("Farewell...")
     high_score = num
