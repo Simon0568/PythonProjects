@@ -4,7 +4,9 @@ import sys
 from time import sleep
 
 # Pogadjanje broja, svaki put kad pocne partija dato je 5 poena, na svaku gresku se oduzima jedan i ako se stigne do 0, racunar je pobedio, ako ne, korisnik je pobedio i ispisuje se rezultat
-#Ako je na kraju broj poena veci(ili jednak) od proslog High Score, prosli highscore = broj poena i ispisuje se datum i vreme u kojem ja napravljen novi highscore, highscore se moze prikazati pritiskom na taster 2 iz glavnog menija
+# Ako je na kraju broj poena veci(ili jednak) od proslog High Score, prosli highscore = broj poena i ispisuje se datum i vreme u kojem ja napravljen novi highscore, highscore se moze prikazati pritiskom na taster 2 iz glavnog menija
+# Ideja - postoji text file iz koga ce se citati highscore i tako omoguciti da se highscore sacuva i nakon gasenja programa.
+
 high_score = 0
 def menu():
     os.system('cls')
