@@ -12,17 +12,17 @@ canvas.geometry("600x800")
 canvas.config(bg="black")
 canvas.resizable(False, False)
 
-photo = tk.PhotoImage(file = "musicPlayer/icons/pic.png")
+photo = tk.PhotoImage(file = "icons/pic.png")
 
 canvas.iconphoto(False, photo)
 
-path = "musicPlayer/tracks"
+path = "tracks"
 ext = "*.wav"
 
 mixer.init()
 
-play_img = tk.PhotoImage(file = "musicPlayer\icons\play.png")
-pause_img = tk.PhotoImage(file = "musicPlayer\icons\pause.png")
+play_img = tk.PhotoImage(file = "icons\play.png")
+pause_img = tk.PhotoImage(file = "icons\pause.png")
 
 def start():
     mixer.music.load(path + "\\" + listbox.get("anchor"))
